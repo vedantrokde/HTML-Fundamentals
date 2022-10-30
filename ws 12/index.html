@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>CSS Text Background Animation</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<ul>
+					<li><a href="#landing">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+
+			<span id="open">
+				<a href="#" onclick="openSlideMenu()"> ||| </a>
+			</span>
+
+			<div id="side-menu" class="side-nav">
+				<span id="close">
+					<a href="#" onclick="closeSlideMenu()"> X </a>
+				</span>
+				<ul>
+					<li><a href="#landing">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<section id="landing" class="landing">
+			<h1 class="animated">Parallax Website</h1>
+			<p class="lead">The world of new possibilities!</p>
+		</section>
+
+		<section id="pricing" class="pricing">
+			<h2>Prices</h2>
+			<div class="wrapper">
+				<div class="price-box">
+					<ul>
+						<li class="header">Beginners</li>
+						<li class="emph"><strong>$5.99</strong> / Month</li>
+						<li><strong>20GB</strong> Disk Space</li>
+						<li><strong>10GB</strong> Data Transfer</li>
+						<li><strong>2</strong> Domains</li>
+						<li><strong>50</strong> Email Accounts</li>
+						<li><strong>2</strong> FTP Accounts</li>
+						<li class="emph">
+							<a href="#" class="btn">Sign Up</a>
+						</li>
+					</ul>
+				</div>
+				<div class="price-box best">
+					<ul>
+						<li class="header header-green">Standard</li>
+						<li class="emph"><strong>$15.99</strong> / Month</li>
+						<li><strong>75GB</strong> Disk Space</li>
+						<li><strong>50GB</strong> Data Transfer</li>
+						<li><strong>10</strong> Domains</li>
+						<li><strong>100</strong> Email Accounts</li>
+						<li><strong>Unlimited</strong> FTP Accounts</li>
+						<li class="emph">
+							<a href="#" class="btn">Sign Up</a>
+						</li>
+					</ul>
+				</div>
+				<div class="price-box">
+					<ul>
+						<li class="header">Developers</li>
+						<li class="emph"><strong>$50.99</strong> / Month</li>
+						<li><strong>200GB</strong> Disk Space</li>
+						<li><strong>100GB</strong> Data Transfer</li>
+						<li><strong>20</strong> Domains</li>
+						<li><strong>Unlimited</strong> Email Accounts</li>
+						<li><strong>Unlimited</strong> FTP Accounts</li>
+						<li class="emph">
+							<a href="#" class="btn">Sign Up</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact">
+			<h2>Contact Us</h2>
+			<div class="wrapper">
+				<div class="info">
+					<h3 class="brand">Prallax Inc.</h3>
+					<ul>
+						<li>555 Dummy St.</li>
+						<li>(555) 555-5555</li>
+						<li>parallax@dummy.com</li>
+					</ul>
+				</div>
+				<hr class="split">
+				<div class="contact-form">
+					<h3>Email Us</h3>
+					<form action="">
+						<p>
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</p>
+						<p>
+							<label for="company">Company</label>
+							<input type="text" name="company" id="company" />
+						</p>
+						<p>
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" />
+						</p>
+						<p>
+							<label for="phone">Mobile Number</label>
+							<input type="text" name="phone" id="phone" />
+						</p>
+						<p class="full">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" cols="5"></textarea>
+						</p>
+						<p class="full"><button type="submit">Send</button></p>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>Copyright &copy; 2021.</p>
+		</footer>
+
+		<script>
+			function openSlideMenu() {
+				document.getElementById("side-menu").style.right = "0";
+				document.getElementById("open").style.display = "none";
+			}
+			function closeSlideMenu() {
+				document.getElementById("open").style.display = "block";
+				document.getElementById("side-menu").style.right = "-10000px";
+			}
+		</script>
+	</body>
+</html>

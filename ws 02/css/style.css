@@ -1,0 +1,179 @@
+/* body {
+    font-family:  sans-serif;
+} */
+
+a {
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+a:hover, .selected {
+    color: black;
+}
+
+p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #353535;
+}
+
+h1, h2 {
+    letter-spacing: -1px;
+}
+
+blockquote, blockquote p {
+    font-size: 15px;
+    line-height: 20px;
+    font-style: italic;
+    color: #0e0e0e;
+}
+
+.container_24 {
+    margin-top: 10px;
+}
+
+/* 
+************************
+* Header
+************************
+*/
+
+header {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    font-size: 30px;
+}
+
+header h1>span {
+    font-weight: lighter;
+}
+
+header > nav {
+    float: right;
+    margin: 0;
+    padding-top: 15px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 24px;
+}
+
+nav a {
+    text-transform: lowercase;
+}
+
+/* 
+************************
+* Banner
+************************
+*/
+
+.banner {
+    overflow: hidden;
+    position: relative;
+}
+
+.left {
+    background: url(../img/timur-kozmenko-y_Yr-xcOaYU-unsplash.jpg) no-repeat;
+    background-size: cover;
+    width: 695px;
+    height: 231px;
+}
+
+.right {
+    background: rgb(58, 54, 54);
+    height: 231px;
+}
+
+.banner h3 {
+    color: white;
+    font-size: 28px;
+    width: 400px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.45);
+    line-height-step: 2px;
+}
+
+/* 
+************************
+* Main
+************************
+*/
+
+.main {
+    margin-top: 10px;
+    padding-top: 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+.button {
+    text-transform: uppercase;
+    padding: 6px;
+    background: #242424;
+}
+
+.button:hover {
+    color: white;
+}
+
+.main h2 {
+    font-size: 26px;
+    text-transform: lowercase;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 22px;
+    margin-bottom: 15px;
+    line-height: 1em;
+}
+
+.main blockquote {
+    padding-left: 20px;
+    /* position: relative; */
+}
+
+.main blockquote:before, .main blockquote:after {
+    font-size: 40px;
+    color: #bfbfbf;
+    font-style: italic;
+}
+
+.main .quote {
+    position: relative;
+}
+
+.main blockquote:before {
+    content: '“';
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.main blockquote:after {
+    content: '”';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    /* float: right; */
+
+}
+
+/* 
+************************
+* Footer
+************************
+*/
+
+footer {
+    margin: 5px;
+    margin-top: 20px;
+}
